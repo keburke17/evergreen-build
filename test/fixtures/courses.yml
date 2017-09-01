@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start_date: 2017-08-31
+  end_date: 2017-08-31
+  individual_date: 2017-08-31
+  monday: MyString
+  tuesday: MyString
+  wednesday: MyString
+  thursday: MyString
+  friday: MyString
+  saturday: MyString
+  sunday: MyString
+  ce_hrs: 1.5
+  url: MyString
+  term: MyString
+  academic_group: MyString
+  catalog_subject: MyString
+  catalog_number: 1
+  course_title: MyString
+  component: MyString
+  units: 1.5
+  recommended_gradeyear: MyString
+  required_elective: MyString
+  honors_ap_adv: MyString
+  course_desc: MyText
+
+two:
+  start_date: 2017-08-31
+  end_date: 2017-08-31
+  individual_date: 2017-08-31
+  monday: MyString
+  tuesday: MyString
+  wednesday: MyString
+  thursday: MyString
+  friday: MyString
+  saturday: MyString
+  sunday: MyString
+  ce_hrs: 1.5
+  url: MyString
+  term: MyString
+  academic_group: MyString
+  catalog_subject: MyString
+  catalog_number: 1
+  course_title: MyString
+  component: MyString
+  units: 1.5
+  recommended_gradeyear: MyString
+  required_elective: MyString
+  honors_ap_adv: MyString
+  course_desc: MyText

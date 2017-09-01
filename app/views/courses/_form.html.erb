@@ -1,0 +1,132 @@
+<%= form_with(model: course, local: true) do |form| %>
+  <% if course.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(course.errors.count, "error") %> prohibited this course from being saved:</h2>
+
+      <ul>
+      <% course.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :start_date %>
+    <%= form.date_select :start_date, id: :course_start_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_date %>
+    <%= form.date_select :end_date, id: :course_end_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :individual_date %>
+    <%= form.date_select :individual_date, id: :course_individual_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :monday %>
+    <%= form.text_field :monday, id: :course_monday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tuesday %>
+    <%= form.text_field :tuesday, id: :course_tuesday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wednesday %>
+    <%= form.text_field :wednesday, id: :course_wednesday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :thursday %>
+    <%= form.text_field :thursday, id: :course_thursday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :friday %>
+    <%= form.text_field :friday, id: :course_friday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :saturday %>
+    <%= form.text_field :saturday, id: :course_saturday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sunday %>
+    <%= form.text_field :sunday, id: :course_sunday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ce_hrs %>
+    <%= form.text_field :ce_hrs, id: :course_ce_hrs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :url %>
+    <%= form.text_field :url, id: :course_url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :term %>
+    <%= form.text_field :term, id: :course_term %>
+  </div>
+
+  <div class="field">
+    <%= form.label :academic_group %>
+    <%= form.text_field :academic_group, id: :course_academic_group %>
+  </div>
+
+  <div class="field">
+    <%= form.label :catalog_subject %>
+    <%= form.text_field :catalog_subject, id: :course_catalog_subject %>
+  </div>
+
+  <div class="field">
+    <%= form.label :catalog_number %>
+    <%= form.number_field :catalog_number, id: :course_catalog_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :course_title %>
+    <%= form.text_field :course_title, id: :course_course_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :component %>
+    <%= form.text_field :component, id: :course_component %>
+  </div>
+
+  <div class="field">
+    <%= form.label :units %>
+    <%= form.text_field :units, id: :course_units %>
+  </div>
+
+  <div class="field">
+    <%= form.label :recommended_gradeyear %>
+    <%= form.text_field :recommended_gradeyear, id: :course_recommended_gradeyear %>
+  </div>
+
+  <div class="field">
+    <%= form.label :required_elective %>
+    <%= form.text_field :required_elective, id: :course_required_elective %>
+  </div>
+
+  <div class="field">
+    <%= form.label :honors_ap_adv %>
+    <%= form.text_field :honors_ap_adv, id: :course_honors_ap_adv %>
+  </div>
+
+  <div class="field">
+    <%= form.label :course_desc %>
+    <%= form.text_area :course_desc, id: :course_course_desc %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

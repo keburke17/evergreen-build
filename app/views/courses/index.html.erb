@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Courses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Individual date</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+      <th>Ce hrs</th>
+      <th>Url</th>
+      <th>Term</th>
+      <th>Academic group</th>
+      <th>Catalog subject</th>
+      <th>Catalog number</th>
+      <th>Course title</th>
+      <th>Component</th>
+      <th>Units</th>
+      <th>Recommended gradeyear</th>
+      <th>Required elective</th>
+      <th>Honors ap adv</th>
+      <th>Course desc</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @courses.each do |course| %>
+      <tr>
+        <td><%= course.start_date %></td>
+        <td><%= course.end_date %></td>
+        <td><%= course.individual_date %></td>
+        <td><%= course.monday %></td>
+        <td><%= course.tuesday %></td>
+        <td><%= course.wednesday %></td>
+        <td><%= course.thursday %></td>
+        <td><%= course.friday %></td>
+        <td><%= course.saturday %></td>
+        <td><%= course.sunday %></td>
+        <td><%= course.ce_hrs %></td>
+        <td><%= course.url %></td>
+        <td><%= course.term %></td>
+        <td><%= course.academic_group %></td>
+        <td><%= course.catalog_subject %></td>
+        <td><%= course.catalog_number %></td>
+        <td><%= course.course_title %></td>
+        <td><%= course.component %></td>
+        <td><%= course.units %></td>
+        <td><%= course.recommended_gradeyear %></td>
+        <td><%= course.required_elective %></td>
+        <td><%= course.honors_ap_adv %></td>
+        <td><%= course.course_desc %></td>
+        <td><%= link_to 'Show', course %></td>
+        <td><%= link_to 'Edit', edit_course_path(course) %></td>
+        <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Course', new_course_path %>
