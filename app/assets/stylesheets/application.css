@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+header {
+  padding: 1em;
+  color: white;
+  background-image: url("/assets/GOPR0367.JPG");
+  height: 400px;
+  background-size: cover;
+  font-size: 1000%;
+  clear: left;
+  text-align: center;
+}
