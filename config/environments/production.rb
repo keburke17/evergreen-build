@@ -29,6 +29,8 @@ Rails.application.configure do
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
+  # set to true after reading https://stackoverflow.com/questions/18324063/rails-4-images-not-loading-on-heroku and failling to display image on heroku.
+  # also precompiled after
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
